@@ -3,14 +3,15 @@ A base package which defines all of our Terraform CDK constructs for infrastruct
 
 # Getting Started
 1.	Prerequisites
-- [Python 3](https://www.python.org/downloads/)
-- [Pipenv](https://pipenv.pypa.io/en/latest/installation/#installing-pipenv)
-- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
-- [cdktf-cli](https://developer.hashicorp.com/terraform/cdktf/cli-reference/cli-configuration)
+-   [Python 3](https://www.python.org/downloads/)
+-   [Pipenv](https://pipenv.pypa.io/en/latest/installation/#installing-pipenv)
+-   [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
+-   [cdktf-cli](https://developer.hashicorp.com/terraform/cdktf/cli-reference/cli-configuration)
 2.	API references
 - [Terraform - Azure Provider](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 3. Customer Account Setup
-- `bootstrap_customer_account.sh`
+-   `bootstrap_customer_account.sh`
+-   `bootstrap_customer_account_service_principal.sh`
 
 
 # Build and Test
