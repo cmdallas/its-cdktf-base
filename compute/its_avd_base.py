@@ -33,60 +33,6 @@ class ItsVirtualDesktopStack(TerraformStack):
             location="westus2",
         )
 
-        # Create a virtual network
-        avd_virtual_net = virtual_network.VirtualNetwork(
-            self,
-            "avd-vnet-id",
-            name="avd-vnet",
-            location="westus2",
-            resource_group_name=avd_resource_group.name,
-            address_space=["10.0.0.0/16"],
-        )
-
-        # Create the virtual subnet for the virtual network
-        avd_virtual_subnet = subnet.Subnet(
-            self,
-            "avd-subnet-id",
-            name="avd-subnet",
-            resource_group_name=avd_resource_group.name,
-            virtual_network_name=avd_virtual_net.name,
-            address_prefixes=["10.0.1.0/24"],
-        )
-
-        # Create a logical security group
-        avd_security_group = network_security_group.NetworkSecurityGroup(
-            self,
-            "avd-sg-id",
-            name="avd-sg",
-            location="westus2",
-            resource_group_name=avd_resource_group.name,
-        )
-
-        # Create the ingress/egress rule for our security group
-        avd_security_rule = network_security_rule.NetworkSecurityRule(
-            self,
-            "avd-security-rule-id",
-            name="HTTPS",
-            priority=100,
-            direction="Inbound",
-            access="Allow",
-            protocol="Tcp",
-            source_port_range="*",
-            destination_port_range="443",
-            source_address_prefix="*",
-            destination_address_prefix="*",
-            resource_group_name=avd_resource_group.name,
-            network_security_group_name=avd_security_group.name,
-        )
-
-        # Create the subnet and security group associatin by id
-        avd_subnet_sg_association = subnet_network_security_group_association.SubnetNetworkSecurityGroupAssociation(
-            self,
-            "avd-subnet-sg-association-id",
-            subnet_id=avd_virtual_subnet.id,
-            network_security_group_id=avd_security_group.id,
-        )
-
         # Create a virtual network interface for virtual machine
         avd_vm_nic = network_interface.NetworkInterface(
             self,

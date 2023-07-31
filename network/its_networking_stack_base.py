@@ -447,10 +447,10 @@ app = App()
 stack = ItsNetworkingStackBase(app, "its_networking_stack")
 AzurermBackend(
     stack,
-    resource_group_name="tfstate-its-networking-stack-13673",
-    storage_account_name="tfstate13673",
-    container_name="tfstate13673",
-    key="tfstate13673",
+    resource_group_name="tfstate-itscdev",
+    storage_account_name="tfstate-itscdev",
+    container_name="tfstate-itscdev",
+    key="tfstate-itscdev", #This is arbitrary and should be unique for each stack deployment
 )
 
 app.synth()
