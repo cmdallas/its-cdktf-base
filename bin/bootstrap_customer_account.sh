@@ -1,6 +1,6 @@
 #!/bin/bash
 
-customer="itscdev"
+customer="<customer_abbreviation>"
 region="westus2"
 subscription_id="<subscriptionid>"
 

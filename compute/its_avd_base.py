@@ -4,16 +4,11 @@ from cdktf import App, TerraformStack, AzurermBackend
 from imports.azurerm import (
     provider,
     resource_group,
-    subnet,
     virtual_desktop_workspace,
     virtual_desktop_host_pool,
     virtual_desktop_application_group,
-    virtual_network,
     network_interface,
     windows_virtual_machine,
-    network_security_group,
-    network_security_rule,
-    subnet_network_security_group_association,
     virtual_machine_extension,
 )
 
