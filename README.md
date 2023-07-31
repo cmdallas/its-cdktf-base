@@ -1,5 +1,5 @@
 # Introduction 
-A base package which defines all of our Terraform CDK constructs for infrastructure as code in Azure.  Each directory will contain
+A base package which defines all of our Terraform CDK constructs for infrastructure as code in Azure.
 
 # Getting Started
 ### 1.	Prerequisites
