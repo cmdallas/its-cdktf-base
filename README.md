@@ -1,5 +1,5 @@
 # Introduction 
-A base package which defines all of our Terraform CDK constructs for infrastructure as code in Azure.
+A base package which defines all of our Terraform CDK constructs for infrastructure as code in Azure.  Each directory will contain
 
 # Getting Started
 ### 1.	Prerequisites
@@ -24,7 +24,7 @@ This bootstrap only needs to be done once. It creates the necessary Azure resour
 -   A storage account access key for Terraform to access the state file
 -   A service principal that Terraform CDK can use to authenticate and manage resources in the Azure account
 
-Completing this bootstrap gives Terraform CDK the permissions and state storage it requires to deploy and manage infrastructure in the Azure subscription. Refer to the wiki for details on performing this one-time setup process.
+Completing this bootstrap gives Terraform CDK the permissions and state storage it requires to deploy and manage infrastructure in the Azure subscription. Refer to the [wiki](https://dev.azure.com/itsc-dev/its_cdktf_base/_wiki/wikis/its_cdktf_base.wiki/3/Development-and-Operations-(DevOps)-Philosophy-Practice#) for details on performing this one-time setup process.
 
 
 # Build, Test, Synthesize & Deploy
