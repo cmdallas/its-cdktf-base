@@ -2,9 +2,15 @@ from setuptools import setup, find_packages
 
 setup(
     name="its-cdktf-base",
-    version="1.0.0",
+    version="1.0.1",
     packages=find_packages(),
-    install_requires=[],
+    install_requires=[
+        "cdktf",
+        "cdktf-cdktf-provider-azurerm",
+        "twine",
+        "keyring",
+        "artifacts-keyring",
+    ],
     # Optional: Add metadata about the package
     description="Set of reusable infrastructure constructs to build Azure resources with CDK using Terraform.",
     author="Mason Putney, Joshua Hughes",

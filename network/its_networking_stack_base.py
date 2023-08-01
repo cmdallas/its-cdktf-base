@@ -441,19 +441,3 @@ class ItsNetworkingStackBase(TerraformStack):
                 ],
             ),
         )
-
-
-app = App()
-stack = ItsNetworkingStackBase(app, "its_networking_stack")
-AzurermBackend(
-    stack,
-    resource_group_name="tfstate-itscdev",
-    storage_account_name="tfstate-itscdev",
-    container_name="tfstate-itscdev",
-    key="tfstate-itscdev", #This is arbitrary and should be unique for each stack deployment
-)
-
-app.synth()
-
-# TODO
-# Fix the tfstate AzureRM Backend

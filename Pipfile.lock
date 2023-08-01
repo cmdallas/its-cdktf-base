@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "1f682962a058459d721102ca6cf9ef5e573f3d501771fc8e0521eb40c0bad2bf"
+            "sha256": "e314992c69e4ad8e70976fae00400e52e66a1235c2c2e4d4aa9c2f146fe6f5ae"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -280,7 +280,7 @@
                 "sha256:3ebb78df84a805d7698245025b975d9d67053cd94c79245ba4b3eb694abe68bb",
                 "sha256:dbace7892d8c0c4ac1ad096662232f831d4e64f4c4545bd53016a3e9d4654743"
             ],
-            "markers": "python_version >= '3.8'",
+            "markers": "python_version < '3.12'",
             "version": "==6.8.0"
         },
         "importlib-resources": {
@@ -328,7 +328,7 @@
                 "sha256:4901caaf597bfd3bbd78c9a0c7c4c29fcd8310dab2cffefe749e916b6527acd6",
                 "sha256:ca0746a19ec421219f4d713f848fa297a661a8a8c1504867e55bfb5e09091509"
             ],
-            "markers": "python_version >= '3.8'",
+            "index": "pypi",
             "version": "==24.2.0"
         },
         "markdown-it-py": {
